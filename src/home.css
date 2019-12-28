@@ -565,7 +565,7 @@ hr {
     font-size: 3.8vw;
     width: 45vw;
     padding: 4vw 12vw;
-    left: -12vw;
+    left: 16vw;
     top: -10vw;
   }
   .issue p {
@@ -623,7 +623,7 @@ hr {
 
 
   .what-we-do-section-container span {
-    margin-left: 22vw;
+    margin-left: 18vw;
     font-size: 3.8vw;
     max-width: unset;
     width: 46vw;
