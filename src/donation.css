@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'Flood';
+  src: url('font/flood.otf');
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color: #354463;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 1vw;
+  color: #354463;
+}
+header a {
+  text-decoration: none;
+  color: #354463;
+}
+.donation-form {
+  display: grid;
+  color: white;
+  padding: 2em;
+  grid-row-gap: 2.5em;
+  background-image: url('images/annie-spratt-427340-unsplash@2x.png');
+  background-position: center;
+  background-size: cover;
+}
+input,
+select {
+  width: 100%;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  background-color: #354463;
+  border: none;
+  color: #c1f7d5;
+  border-bottom: 2px solid #c1f7d5;
+  margin-bottom: 6vw;
+}
+label {
+  padding-bottom: 0.5em;
+  font-size: 0.7em;
+}
+h1 {
+  color: white;
+  font-size: 5.5vw;
+  margin-bottom: 2vw;
+}
+
+.details {
+  display: grid;
+  color: white;
+  background-color: #354463;
+  padding: 1em;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2em;
+}
+
+.form-input-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.5em;
+}
+.form-city-name {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-column-gap: 1.5em;
+}
+.card-expiration-date {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-column-gap: 2.5em;
+}
+.payment-button {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1.5em;
+}
+
+.payment-button button {
+  padding: 0.6em 0em 0.6em 0em;
+  border-radius: 3em;
+  font-weight: bold;
+  background-color: #c1f7d5;
+  color: #354463;
+  border: none;
+}
+
+.payment-button a {
+  color: #c1f7d5;
+}
+
+.quote p {
+  font-family: 'Flood';
+  font-size: 8vw;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 5vw;
+  margin-left: 9vw;
+  width: 97%;
+  font-family: 'Helvetica';
+  color: rgba(53, 68, 99, 1);
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-logo {
+  width: 32vw;
+  font-size: 4.8vw;
+  margin-bottom: 5vw;
+  font-weight: bold;
+}
+
+.footer-items {
+  font-size: 3.7vw;
+  width: 32vw;
+  margin-bottom: 20vw;
+  text-decoration: none;
+  color: rgba(53, 68, 99, 1);
+}
+
+.footer-caption {
+  font-family: 'flood';
+
+  text-align: right;
+  font-size: 9vw;
+  position: relative;
+  left: 45vw;
+  align-self: flex-end;
+  margin-bottom: 5vw;
+}
+
+.middle-content {
+  margin-top: 1vw;
+  font-weight: lighter;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+hr {
+  display: none;
+}
+.link {
+  color: rgba(53, 68, 99, 1);
+  text-decoration: underline;
+
+  margin-top: 3vw;
+}
+.label-adjustment {
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  width: 80vw;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 2em;
+    font-size: 1.5em;
+  }
+  input,
+  select {
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+  }
+  label {
+    font-size: 1.2em;
+  }
+  .quote p {
+    font-size: 8vw;
+    text-align: center;
+  }
+  .donation-form {
+    padding: 4em;
+  }
+  .details {
+    padding: 4em;
+  }
+  .payment-button {
+    grid-template-columns: 1fr 1fr;
+  }
+  .payment-button button {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .payment-button a {
+    align-self: end;
+    font-size: 1.2em;
+    grid-row: 1/2;
+  }
+  .footer {
+    margin-top: 10vw;
+    flex-flow: column wrap;
+    height: 20vw;
+    width: 80vw;
+    align-content: space-between;
+    margin-bottom: 5vw;
+  }
+  .footer-logo {
+    width: 22vw;
+    font-size: 3vw;
+    height: 20vw;
+  }
+  .footer-items {
+    font-size: 1.2vw;
+    width: 9vw;
+    margin-bottom: unset;
+  }
+  .footer-caption {
+    font-size: 2.8vw;
+    text-align: left;
+    top: 1.5vw;
+    left: unset;
+    margin-bottom: unset;
+  }
+  hr {
+    visibility: hidden;
+  }
+  .link {
+    margin-top: 0.5vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 1.5em;
+  }
+
+  .quote {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .quote p {
+    font-size: 6vw;
+  }
+
+  .details {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  h1 {
+    color: white;
+    font-size: 2.1vw;
+  }
+  .footer {
+    /* margin: auto; */
+    margin-left: 5vw;
+    flex-flow: unset;
+  }
+
+  .footer-logo {
+    width: 14vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+  }
+  .footer-items {
+    width: 8.3vw;
+    font-size: 0.8vw;
+  }
+
+  hr {
+    border: solid 0.3px;
+    margin: 0.5vw 0vw;
+  }
+
+  .footer-caption {
+    font-size: 2.3vw;
+    text-align: right;
+    margin-bottom: 13vw;
+  }
+}
